@@ -1,0 +1,337 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*Definição das Variáveis CSS */
+:root {
+    --color-marinho: #191970;
+    --color-amarelo-chave: #FFD700;
+    --color-azul-bone: #003366;
+    --color-urgencia: #FF4500;
+    --color-gray-300: #d1d5db;
+}
+
+/*Estilos personalizados */
+.bg-marinho {
+    background-color: var(--color-marinho);
+}
+
+.bg-azul-bone {
+    background-color: var(--color-azul-bone);
+}
+
+.text-urgencia {
+    color: var(--color-urgencia);
+}
+
+.bg-urgencia {
+    background-color: var(--color-urgencia);
+}
+
+.hover-bg-urgencia:hover {
+    background-color: #e03e00;
+    transition: background-color 0.3s ease;
+}
+
+.text-amarelo-chave {
+    color: var(--color-amarelo-chave);
+}
+
+.border-urgencia {
+    border-color: var(--color-urgencia);
+}
+
+.hover-text-amarelo:hover {
+    color: var(--color-amarelo-chave);
+    transition: color 0.3s ease;
+}
+
+/*Menu fixo */
+.nav-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Ajuste para o conteúdo não ficar atrás do menu fixo */
+main {
+    margin-top: 80px;
+}
+
+/*Estilo do ícone/cadeado */
+.icon-cadeado {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--color-amarelo-chave);
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/*Estilo do hero background */
+.hero-background {
+    background-image: url('imagens/serv_cop.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(25, 25, 112, 0.7);
+    z-index: 1;
+}
+
+.hero-background > * {
+    position: relative;
+    z-index: 2;
+}
+
+/*Estilo do mapa */
+.mapa-com-efeito-vidro {
+    box-shadow: 1px 10px 20px 1px rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+}
+.image-card-central {
+    background-image: url(imagens/maquina_corte.png);
+}
+
+.mapa-com-efeito-vidro iframe {
+    border-radius: 10px;
+}
+
+/* 7. Navegação */
+.nav-link {
+    position: relative;
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--color-amarelo-chave);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+.nav-link.active::before {
+    width: 100%;
+    background-color: var(--color-urgencia);
+}
+
+.nav-link:hover {
+    color: var(--color-urgencia) !important;
+}
+
+.nav-link.active {
+    color: var(--color-urgencia) !important;
+    font-weight: 600;
+}
+
+/* 8. Cards de serviços */
+.card-residencial,
+.card-automotivo,
+.card-industrial {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 350px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.card-residencial {
+    background-image: url('imagens/serv_cop.jpeg');
+}
+
+.card-automotivo {
+    background-image: url('imagens/serv_car4.jpeg');
+}
+
+.card-industrial {
+    background-image: url('imagens/serv_por.jpeg');
+}
+
+/* Overlay gradiente para melhor legibilidade */
+.card-residencial::before,
+.card-automotivo::before,
+.card-industrial::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0, 0.8) 100%
+    );
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.card-residencial:hover::before,
+.card-automotivo:hover::before,
+.card-industrial:hover::before {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.6) 50%,
+        rgba(0, 0, 0, 0.9) 100%
+    );
+}
+
+.card-residencial > *,
+.card-automotivo > *,
+.card-industrial > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Efeito hover nos cards */
+.card-residencial:hover,
+.card-automotivo:hover,
+.card-industrial:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Melhor contraste para texto */
+.card-residencial h3,
+.card-automotivo h3,
+.card-industrial h3,
+.card-residencial p,
+.card-automotivo p,
+.card-industrial p {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+/* 9. Botões */
+.btn-primario {
+    background-color: var(--color-urgencia);
+    color: white;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-primario:hover {
+    background-color: #e03e00;
+    transform: scale(1.05);
+}
+
+/*  Responsividade */
+@media (max-width: 768px) {
+    .hero-background h1 {
+        font-size: 2.5rem;
+    }
+    
+    .mapa-com-efeito-vidro {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .nav-fixed {
+        position: relative;
+    }
+    
+    main {
+        margin-top: 0;
+    }
+    
+    .card-residencial,
+    .card-automotivo,
+    .card-industrial {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 640px) {
+    .nav-link {
+        padding: 0.75rem 0;
+        font-size: 1.1rem;
+    }
+    
+    .nav-link::before {
+        height: 2px;
+    }
+    
+    .hero-background h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Animações */
+* {
+    scroll-behavior: smooth;
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+/*Acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto;
+    }
+}
+
+a:focus, 
+button:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+/* Fallbacks */
+.card-residencial,
+.card-automotivo,
+.card-industrial {
+    background-color: var(--color-azul-bone);
+}

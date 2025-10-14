@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta tags essenciais para SEO -->
+    <meta name="description" content="Chaveiro Avenida - Serviços de chaveiro 24h em Marília e região. Abertura de portas, cópias de chaves, fechaduras e serviços automotivos. Atendimento rápido e emergencial.">
+    <meta name="keywords" content="chaveiro 24h, chaveiro Marília, abertura de porta, cópia de chave, chaveiro automotivo, chaveiro residencial, chaveiro industrial">
+    <meta name="author" content="Chaveiro Avenida">
+    
+    <!-- Open Graph para redes sociais -->
+    <meta property="og:title" content="Chaveiro Avenida - Serviços de Chaveiro 24h">
+    <meta property="og:description" content="Serviços de chaveiro 24h em Marília e região. Atendimento emergencial para residências, veículos e empresas.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.chaveiroavenida.com.br">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="imagens/transp.jpg">
+
+    <!-- Título otimizado para SEO -->
+    <title>Chaveiro Avenida 24h | Abertura de Portas e Cópias de Chaves em Marília</title>
+
+    <!-- Recursos externos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Arquivo CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Schema.org markup para Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Chaveiro Avenida",
+      "image": "https://www.chaveiroavenida.com.br/imagens/marca.jpg",
+      "description": "Serviços de chaveiro 24h em Marília e região",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Sampaio Vidal",
+        "addressLocality": "Marília",
+        "addressRegion": "SP"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-22.15805780663326",
+        "longitude": "-49.9633117128812"
+      },
+      "url": "https://www.chaveiroavenida.com.br",
+      "telephone": "+5514996080894",
+      "openingHours": "Mo-Su 00:00-23:59",
+      "priceRange": "$$",
+      "areaServed": "Marília e região"
+    }
+    </script>
+</head>
+<body>
+
+<header role="banner">
+    <div class="bg-marinho text-white text-sm py-2 px-4 flex justify-between items-center">
+        
+        <div class="hidden md:block">
+            <span class="inline-flex items-center">
+                <i class="fas fa-clock mr-2 text-amarelo-chave" aria-hidden="true"></i> 
+                Atendimento 24 horas - Marília e Região
+            </span>
+        </div>
+
+        <div class="flex items-center space-x-3">
+            
+            <a href="https://instagram.com/chaveiroavenida" target="_blank" rel="noopener noreferrer" class="bg-urgencia text-white p-2 rounded-full hidden sm:block hover-bg-urgencia" aria-label="Siga-nos no Instagram">
+                <i class="fab fa-instagram text-base" aria-hidden="true"></i>
+            </a>
+            
+            <a href="https://wa.me/5514996080894" target="_blank" rel="noopener noreferrer" class="bg-urgencia text-white p-2 rounded-full hover-bg-urgencia" aria-label="Fale conosco no WhatsApp">
+                <i class="fab fa-whatsapp text-base" aria-hidden="true"></i>
+            </a>
+
+            <a href="tel:+5514996080894" class="bg-urgencia hover-bg-urgencia text-white font-bold py-2 px-4 rounded-full inline-flex items-center">
+                <i class="fas fa-phone mr-2" aria-hidden="true"></i> 
+                Ligue: <span class="ml-1">(14) 99608-0894</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- Menu fixo -->
+<nav class="nav-fixed bg-white shadow-md" role="navigation" aria-label="Menu principal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+        
+        <div class="flex items-center space-x-2">
+            <img 
+                src="imagens/marca.jpg" 
+                alt="Logo Chaveiro Avenida - Serviços de Chaveiro 24h" 
+                class="w-10 h-10 object-contain"
+            >
+            <div class="text-xl font-bold text-azul-bone">Chaveiro Avenida</div>
+        </div>
+
+        <div class="hidden sm:flex space-x-8">
+            <a href="#inicio" class="nav-link text-azul-bone font-medium relative active" data-target="inicio">
+                <span>Início</span>
+            </a>
+            <a href="#servicos" class="nav-link text-azul-bone font-medium relative" data-target="servicos">
+                <span>Serviços</span>
+            </a>
+            <a href="#contato" class="nav-link text-azul-bone font-medium relative" data-target="contato">
+                <span>Contato</span>
+            </a>
+            <a href="#localizacao" class="nav-link text-azul-bone font-medium relative" data-target="localizacao">
+                <span>Localização</span>
+            </a>
+        </div>
+           
+    </div>
+</nav>
+
+<main role="main">
+    <section id="inicio" class="hero-background h-screen flex items-center relative pt-16" aria-labelledby="hero-title">
+        <div class="absolute inset-0 bg-marinho opacity-80"></div> 
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid md:grid-cols-2 items-center gap-8">
+            
+            <div class="text-white">
+                <p class="text-amarelo-chave font-semibold mb-4 text-xl">Serviço imediato: (14) 99608-0894</p>
+                <h1 id="hero-title" class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+                    Chaveiro <br> 
+                    <span class="text-amarelo-chave">Serviços 24h</span>
+                </h1>
+                <p class="text-gray-300 text-lg mb-8">
+                    Oferecemos serviços completos de chaveiro para os setores industrial, residencial e automotivo em Marília e região. Atendimento emergencial 24 horas.
+                </p>
+                
+                <!-- Botão de chamada para ação otimizado -->
+                <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                    <a href="tel:+5514996080894" class="bg-urgencia hover-bg-urgencia text-white font-bold py-3 px-6 rounded-lg inline-flex items-center justify-center text-lg">
+                        <i class="fas fa-phone mr-2" aria-hidden="true"></i> 
+                        LIGUE AGORA
+                    </a>
+                    <a href="https://wa.me/5514996080894" target="_blank" rel="noopener noreferrer" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg inline-flex items-center justify-center text-lg">
+                        <i class="fab fa-whatsapp mr-2" aria-hidden="true"></i> 
+                        WHATSAPP
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção de serviços -->
+    <section id="servicos" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12 text-azul-bone">Nossos Serviços de Chaveiro</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Card Residencial -->
+                <div class="card-residencial rounded-lg shadow-md border-t-4 border-urgencia relative overflow-hidden">
+                    <div class="absolute inset-0 bg-black opacity-40 z-0"></div>
+                    
+                    <div class="relative z-10 p-6 text-white h-full flex flex-col justify-end">
+                        <div class="flex items-center mb-4">
+                            <div class="icon-cadeado mr-3 bg-white"></div>
+                            <h3 class="text-xl font-semibold">Chaveiro Residencial</h3>
+                        </div>
+                        <p class="text-gray-100 mb-4">Abertura de portas, troca de fechaduras, cópias de chaves e muito mais para sua residência.</p>
+                        <div class="mt-auto">
+                            <span class="inline-block bg-marinho text-white text-xs px-3 py-2 rounded font-semibold">24 HORAS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Automotivo -->
+                <div class="card-automotivo rounded-lg shadow-md border-t-4 border-urgencia relative overflow-hidden">
+                    <div class="absolute inset-0 bg-black opacity-40 z-0"></div>
+                    
+                    <div class="relative z-10 p-6 text-white h-full flex flex-col justify-end">
+                        <div class="flex items-center mb-4">
+                            <div class="icon-cadeado mr-3 bg-white"></div>
+                            <h3 class="text-xl font-semibold">Chaveiro Automotivo</h3>
+                        </div>
+                        <p class="text-gray-100 mb-4">Chave presa na ignição, abertura de carros, programação de chaves codificadas e serviços automotivos.</p>
+                        <div class="mt-auto">
+                            <span class="inline-block bg-urgencia text-white text-xs px-3 py-2 rounded font-semibold">EMERGÊNCIA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Industrial -->
+                <div class="card-industrial rounded-lg shadow-md border-t-4 border-urgencia relative overflow-hidden">
+                    <div class="absolute inset-0 bg-black opacity-40 z-0"></div>
+                    
+                    <div class="relative z-10 p-6 text-white h-full flex flex-col justify-end">
+                        <div class="flex items-center mb-4">
+                            <div class="icon-cadeado mr-3 bg-white"></div>
+                            <h3 class="text-xl font-semibold">Chaveiro Industrial</h3>
+                        </div>
+                        <p class="text-gray-100 mb-4">Serviços especializados para empresas, indústrias e comércios, incluindo cofres e sistemas de segurança.</p>
+                        <div class="mt-auto">
+                            <span class="inline-block bg-azul-bone text-white text-xs px-3 py-2 rounded font-semibold">COMERCIAL</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção de contato -->
+    <section id="contato" class="py-16 bg-azul-bone text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Entre em Contato</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-amarelo-chave">Informações de Contato</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-amarelo-chave"></i>
+                            <span class="text-lg">(14) 99608-0894</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-3 text-amarelo-chave"></i>
+                            <span class="text-lg">Marília - SP e Região</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock mr-3 text-amarelo-chave"></i>
+                            <span class="text-lg">Atendimento 24 horas</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-amarelo-chave">Área de Atendimento</h3>
+                    <p class="mb-6 text-lg">Atendemos toda a região de Marília e cidades próximas com serviço rápido e de qualidade.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://wa.me/5514996080894" target="_blank" rel="noopener noreferrer" class="bg-urgencia hover-bg-urgencia text-white font-bold py-3 px-6 rounded-full inline-flex items-center">
+                            <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                        </a>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de localização -->
+    <section id="localizacao" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12 text-azul-bone">Nossa Localização</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-azul-bone">Onde Estamos</h3>
+                    <p class="text-gray-700 mb-6 text-lg">Atendemos em toda a região de Marília com serviço rápido e eficiente.</p>
+                    <div class="space-y-4">
+                        <p class="flex items-center text-lg">
+                            <i class="fas fa-map-marker-alt mr-3 text-urgencia text-xl"></i>
+                            <span>Marília - SP e Região</span>
+                        </p>
+                        <p class="flex items-center text-lg">
+                            <i class="fas fa-clock mr-3 text-urgencia text-xl"></i>
+                            <span>Atendimento 24 horas</span>
+                        </p>
+                        <p class="flex items-center text-lg">
+                            <i class="fas fa-car mr-3 text-urgencia text-xl"></i>
+                            <span>Atendimento com deslocamento</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="mapa-com-efeito-vidro h-64 lg:h-80 overflow-hidden">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!4v1746907793006!6m8!1m7!1sQbfP4uiIdMwQAGpUD6cAHA!2m2!1d-22.15805780663326!2d-49.9633117128812!3f347.96279078801734!4f-17.958554702032302!5f0.7820865974627469"
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        title="Localização do Chaveiro Avenida em Marília">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-marinho text-white py-8" role="contentinfo">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-amarelo-chave">Chaveiro Avenida</h3>
+                <p class="text-lg">Serviços de chaveiro 24 horas em Marília e região. Atendimento rápido e de qualidade.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-amarelo-chave">Contato Rápido</h3>
+                <p class="flex items-center text-lg mb-2">
+                    <i class="fas fa-phone mr-2" aria-hidden="true"></i> 
+                    (14) 99608-0894
+                </p>
+                <p class="flex items-center text-lg">
+                    <i class="fas fa-map-marker-alt mr-2" aria-hidden="true"></i> 
+                    Marília - SP
+                </p>
+            </div>
+        </div>
+        <div class="mt-8 pt-6 border-t border-gray-700 text-center">
+            <p class="text-lg">&copy; 2024 Chaveiro Avenida - Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Arquivo JavaScript separado -->
+<script src="script.js"></script>
+
+</body>
+</html>
